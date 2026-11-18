@@ -1,0 +1,54 @@
+% Slide Beamer — Merci à nos partenaires (Peisey-Vallandry)
+% Compiler : tectonic partenaires.tex  (ou pdflatex/xelatex)
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+
+\definecolor{paon}{RGB}{0,174,199}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=black}
+
+\newcommand{\logopdf}[2]{\includegraphics[height=#2]{logos/pdf/#1.pdf}}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \vspace{-2mm}
+  \begin{center}
+    \colorbox{paon}{\makebox[\dimexpr\textwidth-2\fboxsep][c]{%
+      \color{white}\LARGE\bfseries Merci à nos partenaires}}
+  \end{center}
+
+  \vspace{4mm}
+  \begin{center}
+    % Ligne 1 : Mairie de Landry / Ski Club Peisey-Vallandry / Commune de Peisey-Nancroix
+    \logopdf{mairie_landry}{1.55cm}\hspace{8mm}%
+    \logopdf{ski_club_pv}{1.55cm}\hspace{8mm}%
+    \logopdf{peisey_nancroix}{1.55cm}
+
+    \vspace{5mm}
+    % Ligne 2 : STR / Intersport
+    \logopdf{str}{1.30cm}\hspace{14mm}%
+    \logopdf{intersport}{1.20cm}
+
+    \vspace{5mm}
+    % Ligne 3 : Aux Enfants Terribles / RPB / Sherpa
+    \logopdf{enfants_terribles}{1.15cm}\hspace{6mm}%
+    \logopdf{rpb}{1.20cm}\hspace{6mm}%
+    \logopdf{sherpa}{1.15cm}
+
+    \vspace{4mm}
+    % Ligne 4 : ADS / FFS / esf / Comité Ski Savoie / Carré Neige
+    \logopdf{ads}{1.05cm}\hspace{4mm}%
+    \logopdf{ffs}{1.10cm}\hspace{4mm}%
+    \logopdf{esf}{1.00cm}\hspace{4mm}%
+    \logopdf{comite_ski_savoie}{1.00cm}\hspace{4mm}%
+    \logopdf{carre_neige}{1.00cm}
+  \end{center}
+\end{frame}
+
+\end{document}
